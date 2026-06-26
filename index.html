@@ -84,38 +84,25 @@
       /* --- Home / logo section --- */
       .home {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
+        position: relative;
+        top: -1rem;
         padding: 2rem;
       }
 
       .logo {
-        width: min(600px, 80vw);
-        height: auto;
-        border-radius: 1rem;
-      }
-
-      .logos {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         border-radius: 1rem;
         object-fit: cover;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .logo-placeholder {
-        width: min(200px, 60vw);
-        height: min(200px, 60vw);
-        background: rgba(255,255,255,0.2);
-        border-radius: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: whitesmoke;
-        font-size: 1rem;
-        font-family: georgia, serif;
-        text-align: center;
-        padding: 1rem;
+      .text {
+        width: auto;
+        height: 80px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
       .search-bar {
@@ -131,6 +118,8 @@
         border-radius: 1rem;
         border: 0.5px solid var(--col1);
         background: whitesmoke;
+        box-shadow: 0 0 0.5rem whitesmoke;
+        filter: opacity(90%);
         padding: 0.5rem 1rem;
         display: flex;
         justify-content: center;
@@ -182,40 +171,7 @@
         transform: scale(1.1) translateY(-8px);
         box-shadow: 0 0 0.75rem whitesmoke;
       }
-
-      /* --- Credits --- */
-      .credits {
-        text-align: center;
-        padding-bottom: 4rem;
-      }
-
-      .spade {
-        width: 300px;
-        height: 300px;
-        border-radius: 1rem;
-      }
-
-      .spade-placeholder {
-        width: 100px;
-        height: 100px;
-        background: rgba(255,255,255,0.15);
-        border-radius: 1rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: whitesmoke;
-        font-size: 5rem;
-        margin: 2rem auto;
-      }
-
-      .credits p {
-        color: whitesmoke;
-        font-family: georgia, serif;
-        font-size: 0.9rem;
-        margin-top: 1rem;
-        opacity: 0.85;
-      }
-
+  
       /* --- Section divider --- */
       .divider {
         border: none;
@@ -225,17 +181,18 @@
 
       /* --- Download button --- */
       .download {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
+        position: relative;
+        top: 9rem;
+        left: 10rem;
         padding: 0.5rem 1rem;
         background: whitesmoke;
-        color: var(--col1);
+        box-shadow: 0 0 0.5rem whitesmoke;
+        color: navy;
         text-decoration: none;
         border-radius: 1rem;
         font-family: georgia, serif;
         font-weight: bold;
-        margin: 1rem auto;
+        margin-bottom: 1rem;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
@@ -247,7 +204,7 @@
   </head>
   <body>
 
-    <a href="Gameopia.apk" download="Gameopia.apk" class="download">Download Now!</a>
+    <a href="Gameopia" download="Gameopia" class="download">Download Now!</a>
 
     <!-- Navigation -->
     <nav class="navi" aria-label="Page sections">
@@ -261,7 +218,7 @@
 
     <!-- Home / Logo -->
     <section class="home" id="home">
-      <div class="logo-placeholder"><img src="Designer.png" alt="Gameopia" class="logos"></div>
+      <div class="logo-placeholder"><img src="Gameopia.png" alt="Gameopia" class="logo"><img src="Gameopia  txt.png" alt="Text" class="text"></div>
     </section>
 
     <hr class="divider"/>
